@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: firstName lastName, firstName lastName, firstName lastName
+	File Name: insight.html
+	Date: 01/01/2020
+ -->
+<html lang="en">
+<head>
+	<title>Advancing Technology: Insight</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    
+    <div id="container">
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="ai.html">AI</a>
+                <a href="deeplearn.html">Deep Learning</a>
+                <a href="nanotech.html">Nanotechnology</a>
+                <a href="vehicles.html">Unmanned Vehicles</a>
+                <a href="insight.html">Insight</a>
+            </div>
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+		</nav> 
+        
+        <header>
+            <h1>Advancing Technology</h1>
+            <h3>A Look into the Future &#128171;</h3>
+        </header>
+
+        <nav class="tablet-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai.html">AI</a></li>
+                <li><a href="deeplearn.html">Deep Learning</a></li>
+                <li><a href="nanotech.html">Nanotechnology</a></li>
+                <li><a href="vehicles.html">Unmanned Vehicles</a></li>
+                <li><a href="insight.html">Insight</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+
+            <div id="form">
+                
+                <h2>Complete the form below to join our email list and stay current with the latest trends in technology.</h2> 
+            
+                <form class="form-grid"><!-- Start Form -->
+                    
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required> 
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="email@host.com">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Fields of Interest</legend>
+                        <p>I am interested in learning more about:</p>
+                            
+                        <label for="arti"><input type="checkbox" name="interest" id="arti" value="Artificial Intelligence">Artificial Intelligence</label>
+
+                        <label for="deepl"><input type="checkbox" name="interest" id="deepl" value="Deep Learning">Deep Learning</label>
+
+                        <label for="nanot"><input type="checkbox" name="interest" id="nanot" value="Nanotechnology">Nanotechnology</label>
+                        
+                        <label for="veh"><input type="checkbox" name="interest" id="veh" value="Unmanned Vehicles">Unmanned Vehicles</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                            <legend>Mailing List Preferences</legend>
+                            <label for="reference">How often would you like to receive emails from us?</label>
+                            <select name="mail" id="mail">
+                                <option value="Daily">Daily</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Bi-Weekly">Bi-Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Breaking News">Breaking News</option>
+                            </select>
+
+                            <label for="questions">Questions?</label>
+                            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+                    
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                    
+                </form>
+            
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@advatech.net">contact@advatech.net</a></p>
+        </footer>
+        
+    </div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

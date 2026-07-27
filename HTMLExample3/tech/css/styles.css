@@ -1,0 +1,415 @@
+/*
+Authors: firstName lastName, firstName lastName, firstName lastName
+Date: 01/01/2020
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, section, article, aside, figure, figcaption, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #417589;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tablet-desk */
+.tablet-desk, .desktop, #nav-links {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #e3eef2;
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: 'Merriweather', serif;
+    text-shadow: 4px 4px 12px #213b45;
+    margin-left: 12%;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: Futura, Arial, sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #213b45;
+}
+
+.mobile-nav a {
+    color: #fff;
+    background-color: #417589;
+    text-align: center;  
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    text-shadow: 5px 5px 10px #213b45;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+    text-shadow: 5px 5px 10px #000;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e3eef2;
+    font-family: 'Lato', sans-serif;
+}
+
+main h2 {
+    color: #213B45;
+}
+
+main p {
+    color: #0F252E;
+    font-size: 1.25em;
+}
+
+main a {
+    text-decoration: none;
+    color: #417589;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    font-size: 1.15em;
+}
+
+main ul li:last-child {
+    padding-bottom: 2%;
+}
+
+article, figure {
+    padding: 2%;
+}
+
+figure {
+    border: 2px solid #000;
+    margin: 2% auto;
+    background-color: rgba(65, 117, 137, 0.4);
+    text-align: center;
+}
+
+figcaption {
+    padding: 2%;
+}
+
+section h1 {
+    font-size: 2.5em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #213b45;
+    font-weight: bold;
+    font-variant-caps: all-small-caps; 
+}
+
+.round {
+    border-radius: 7px;
+}
+
+#ai ul {
+    margin-left: 8%;
+}
+
+#deep a {
+    color: #213b45;
+}
+
+.examples {
+    border: 1px solid #417589;
+    padding: 2%;
+    background: rgba(65, 117, 137, 0.5);
+    box-shadow: 4px 4px 10px #000;
+}
+
+.examples ul {
+    margin-left: 8%;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea  { 
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #a8c9d6;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+#frame {
+    cursor: pointer;
+}
+
+.move {
+    -webkit-animation-name: move;
+    animation-name: move;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes move {
+  0%   {width: 0;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  100% {width: 100%;}
+}
+
+/* Standard syntax */
+@keyframes move {
+  0%   {width: 0;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  100% {width: 100%;}
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    color: #e3eef2;
+    font-weight: bold;
+}
+
+footer a {
+    color: #e3eef2;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 600px), print {
+ 
+    /* Tablet Viewport: Show tablet-desk class, hide mobile class */
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for header area */
+    header h1 {
+        font-size: 3em;
+        margin-left: 0;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        padding: 0.75em;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    
+    section {
+        grid-column: 1 / span 2;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    
+    /* Desktop Viewport: Show tab-desk class, hide mobile class */
+    .desktop {
+        display: block;
+    }
+
+    .mobile-tab {
+        display: none;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+    
+    nav li a:link {
+        color: #fff;
+    }
+    
+    nav li a:hover {
+        color: #74a9be;
+        transform: scale(1.1);
+    }
+    
+    nav li a:active {
+        color: #8cb3d9;
+    }
+    
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        overflow: auto;
+    }
+    
+    figure {
+        max-width: 460px;
+    }
+    
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+        padding: 1%;
+    }
+    
+    th {
+        background-color: #213b45;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #a8c9d6;
+        color: #fff;
+    }
+    
+    /* Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+    
+    /* Desktop Viewport: Style rules for footer content */
+    footer {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    
+    /* Desktop Viewport: Style rules for body and  container */
+    body {
+        background: linear-gradient(#e3eef2, #417589);
+        background-repeat: no-repeat;
+    }
+    
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+    /* Desktop Viewport: Style rule for header content */
+    header {
+        color: #417589;
+    }
+    
+    /* Desktop Viewport: Style rule for main content */
+    main {
+        background-color: #e3eef2;
+    }
+    
+    /* Desktop Viewport: Style rule for footer content */
+    footer, footer a {
+        color: #e5e9fc;
+    }
+    
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}

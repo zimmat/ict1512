@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Author: Zimkhitha Matshangaza
+        Date: 14 June 2026
+        Filename: orderConfirmation.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmation | Slime's Braai & Mleqwa Delicious Food</title>
+
+    <link rel="stylesheet" href="css/registrationform.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/populateOrderConfirmation.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="header-nav">
+
+            <div class="header-nav-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png"
+                         alt="Slime's Braai & Mleqwa Delicious Food Logo"
+                         class="header-logo">
+                </a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="products.html">Products</a></li>
+                <li class="menu-item"><a href="registration.html">Registration</a></li>
+                <li class="menu-item"><a href="staff.html">Staff</a></li>
+            </ul>
+
+        </section>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+
+        <div class="container">
+
+            <h1>Order Confirmation</h1>
+
+            <form id="orderConfirmationForm">
+
+                <!-- Personal Information -->
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-grid">
+                    <div class="form-group">
+                    <label for="preferredName">Preferred Name</label>
+                    <input type="text" id="preferredName" readonly>
+                    </div>
+                    <div class="form-group">
+
+                    <label for="fullNames">Full Names (as on ID)</label>
+                    <input type="text" id="fullNames" readonly>
+                    </div>
+                    <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" readonly>
+                    </div>
+                    <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" readonly>
+                    </div>
+                   <div class="form-group">
+                    <label for="cellPhone">Cell Phone Number</label>
+                    <input type="text" id="cellPhone" readonly>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" readonly>
+                    </div>
+                </div>
+                </fieldset>
+
+                <!-- Shipping Address -->
+
+                <fieldset>
+
+                    <legend>Shipping Address</legend>
+                    <div class="form-group">
+                    <label for="shippingStreet">Street Address</label>
+                    <input type="text" id="shippingStreet" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="shippingSuburb">Suburb</label>
+                    <input type="text" id="shippingSuburb" readonly>
+                  </divdiv>
+                    <div class="row">
+
+                        <div>
+                            <label for="shippingCity">City / Town</label>
+                            <input type="text" id="shippingCity" readonly>
+                        </div>
+
+                        <div>
+                            <label for="shippingProvince">Province</label>
+                            <input type="text" id="shippingProvince" readonly>
+                        </div>
+
+                        <div>
+                            <label for="shippingPostal">Postal Code</label>
+                            <input type="text" id="shippingPostal" readonly>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- Payment Information -->
+
+                <fieldset>
+
+                    <legend>Payment Information</legend>
+                    <div class="form-group">
+                    <label for="cardName">Name on Credit Card</label>
+                    <input type="text" id="cardName" readonly>
+                    </div>
+                    <div class="form-group">
+                    <label for="cardType">Credit Card Type</label>
+                    <input type="text" id="cardType" readonly>
+                   </div>
+                   <div class="form-group">
+                    <label for="cardNumber">Credit Card Number</label>
+                    <input type="text" id="cardNumber" readonly>
+                    </div>
+                    <div class="row">
+
+                        <div>
+                            <label for="expiryMonth">Expiry Month</label>
+                            <input type="text" id="expiryMonth" readonly>
+                        </div>
+
+                        <div>
+                            <label for="expiryYear">Expiry Year</label>
+                            <input type="text" id="expiryYear" readonly>
+                        </div>
+
+                        <div>
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" readonly>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <div class="buttons">
+
+                    <button type="button" onclick="window.print()">
+                      Place Order
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+</body>
+</html>
