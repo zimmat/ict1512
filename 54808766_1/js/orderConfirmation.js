@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
+    // Let your validation script run first
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
         const data = {
             preferredName: document.getElementById("preferredName").value,
             fullNames: document.getElementById("fullNames").value,

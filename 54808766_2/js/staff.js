@@ -7,18 +7,20 @@
     Loads staff details from JSON file
 */
 
-
+// Load staff directory
 fetch("data/staff.json")
   .then(response => response.json())
   .then(data => {
     console.log({data});
-
+   
+    // Populate staff gallery
     const staffGallery = document.getElementById("staffGallery");
-
+ 
+    // Loop through staff directory
     data.staffDirectory.forEach(staff => {
-
+    
+      // Create figure
       let figure = document.createElement("figure");
-
       figure.innerHTML = `
         <img 
           src="images/${staff.firstName.toLowerCase()}.png"
@@ -49,12 +51,11 @@ fetch("data/staff.json")
 
         </figcaption>
       `;
-
+     // Add figure to staff gallery
       staffGallery.appendChild(figure);
 
     });
 
-  })
-  .catch(error => {
+  }).catch(error => {
     console.error("Error loading staff directory:", error);
   });
