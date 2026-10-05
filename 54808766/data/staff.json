@@ -1,0 +1,94 @@
+{
+  "staffDirectory": [
+    {
+      "staffNumber": "SB001",
+      "firstName": "Slime",
+      "lastName": "Mthembu",
+      "jobDescription": "Owner and Operations Manager",
+      "workPhoneNumber": "021-555-1001",
+      "workEmailAddress": "slime.mthembu@slimesbraai.co.za",
+      "image_path": "images/slime.png"
+    },
+    {
+      "staffNumber": "SB002",
+      "firstName": "Zanele",
+      "lastName": "Ndlovu",
+      "jobDescription": "Assistant Manager",
+      "workPhoneNumber": "021-555-1002",
+      "workEmailAddress": "zanele.ndlovu@slimesbraai.co.za",
+      "image_path": "images/zanele.png"
+    },
+    {
+      "staffNumber": "SB003",
+      "firstName": "Ayanda",
+      "lastName": "Mabena",
+      "jobDescription": "Head Cook",
+      "workPhoneNumber": "021-555-1003",
+      "workEmailAddress": "ayanda.mabena@slimesbraai.co.za",
+      "image_path": "images/ayanda.png"
+    },
+    {
+      "staffNumber": "SB004",
+      "firstName": "Lungelo",
+      "lastName": "Dlamini",
+      "jobDescription": "Braai Chef",
+      "workPhoneNumber": "021-555-1004",
+      "workEmailAddress": "lungelo.dlamini@slimesbraai.co.za",
+      "image_path": "images/lungelo.png"
+    },
+    {
+      "staffNumber": "SB005",
+      "firstName": "Nokuthula",
+      "lastName": "Mokoena",
+      "jobDescription": "Food Preparation Assistant",
+      "workPhoneNumber": "021-555-1005",
+      "workEmailAddress": "nokuthula.mokoena@slimesbraai.co.za",
+      "image_path": "images/nokuthula.png"
+    },
+    {
+      "staffNumber": "SB006",
+      "firstName": "Bongani",
+      "lastName": "Khumalo",
+      "jobDescription": "Cashier",
+      "workPhoneNumber": "021-555-1006",
+      "workEmailAddress": "bongani.khumalo@slimesbraai.co.za",
+      "image_path": "images/bongani.png"
+    },
+    {
+      "staffNumber": "SB007",
+      "firstName": "Thandiwe",
+      "lastName": "Cele",
+      "jobDescription": "Customer Service Representative",
+      "workPhoneNumber": "021-555-1007",
+      "workEmailAddress": "thandiwe.cele@slimesbraai.co.za",
+      "image_path": "images/thandiwe.png"
+    },
+    {
+      "staffNumber": "SB008",
+      "firstName": "Siyabonga",
+      "lastName": "Mkhize",
+      "jobDescription": "Delivery Driver",
+      "workPhoneNumber": "021-555-1008",
+      "workEmailAddress": "siyabonga.mkhize@slimesbraai.co.za",
+      "image_path": "images/siyabonga.png"
+    },
+    {
+      "staffNumber": "SB009",
+      "firstName": "Nomsa",
+      "lastName": "Zungu",
+      "jobDescription": "Kitchen Assistant",
+      "workPhoneNumber": "021-555-1009",
+      "workEmailAddress": "nomsa.zungu@slimesbraai.co.za",
+      "image_path": "images/nomsa.png"
+    },
+    {
+      "staffNumber": "SB010",
+      "firstName": "Themba",
+      "lastName": "Mahlangu",
+      "jobDescription": "Stock and Supplies Coordinator",
+      "workPhoneNumber": "021-555-1010",
+      "workEmailAddress": "themba.mahlangu@slimesbraai.co.za",
+      "image_path": "images/themba.png"
+    }
+  ]
+}

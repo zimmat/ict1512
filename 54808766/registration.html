@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Author: Zimkhitha Matshangaza 
+    Date: 14 July 2026
+     Filename: clientRegistrationForm.html 
+     -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Client registration form for Slime's Braai & Mleqwa Delicious Food">
+  <title>Client Registration - Slime's Braai & Mleqwa Delicious Food</title>
+  <link rel="stylesheet" href="StyleSheet/styles.css">
+  <script src="js/formValidation.js" defer></script>
+</head>
+
+<body> 
+  <!-- Header and Navigation -->
+  <header class="header">
+    <div class="header-nav-logo"> <a href="index.html"> <img src="images/logo.png"
+          alt="Slime's Braai & Mleqwa Delicious Food Logo" class="header-logo" width="100" height="130"> </a> </div>
+    <nav class="header-nav">
+      <ul class="menu-items">
+        <li class="menu-item"> <a href="index.html">Home</a> </li>
+        <li class="menu-item"> <a href="products.html">Products</a> </li>
+        <li class="menu-item active"> <a href="registration.html">Registration</a> </li>
+        <li class="menu-item"> <a href="staff.html">Staff</a> </li>
+        <li class="menu-item"> <a href="contact.html">Contact Us</a> </li>
+      </ul>
+    </nav>
+  </header> 
+  <!-- Main Content -->
+  <main class="container">
+    <div class="form-div">
+      <h2>Client Registration Form</h2>
+      <form id="registrationForm" novalidate> 
+        <!-- ================= PERSONAL INFORMATION ================= -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-grid">
+            <div class="form-group"> <label for="preferredName"> Preferred Name </label> <input type="text"
+                id="preferredName" name="preferredName" required> </div>
+            <div class="form-group"> <label for="fullNames"> Full Names as on ID </label> <input type="text"
+                id="fullNames" name="fullNames" required> </div>
+            <div class="form-group"> <label for="surname"> Surname </label> <input type="text" id="surname"
+                name="surname" required> </div>
+            <div class="form-group"> <label for="idNumber"> ID Number </label> <input type="text" id="idNumber"
+                name="idNumber" required maxlength="13" inputmode="numeric"> </div>
+            <div class="form-group"> <label for="cellphoneNumber"> Cell Phone Number </label>
+              <div class="phone-input"> <span class="phone-prefix">+27</span> <input type="tel" id="cellphoneNumber"
+                  name="cellphoneNumber" required maxlength="9" inputmode="numeric" placeholder="821234567"> </div>
+            </div>
+            <div class="form-group"> <label for="email"> E-mail </label> <input type="email" id="email" name="email"
+                required> </div>
+          </div>
+        </fieldset> 
+        <!-- ================= SHIPPING ADDRESS ================= -->
+        <fieldset>
+          <legend>Shipping Address</legend>
+          <div class="form-grid">
+            <div class="form-group"> <label for="shippingStreet"> Street Name </label> <input type="text"
+                id="shippingStreet" name="shippingStreet" required> </div>
+            <div class="form-group"> <label for="shippingSuburb"> Suburb </label> <input type="text" id="shippingSuburb"
+                name="shippingSuburb" required> </div>
+            <div class="form-group"> <label for="shippingCity"> City/Town </label> <input type="text" id="shippingCity"
+                name="shippingCity" required> </div>
+            <div class="form-group"> <label for="shippingProvince"> Province </label> <select id="shippingProvince"
+                name="shippingProvince" required>
+                <option value=""> Select Province </option>
+                <option value="Eastern Cape"> Eastern Cape </option>
+                <option value="Free State"> Free State </option>
+                <option value="Gauteng"> Gauteng </option>
+                <option value="KwaZulu-Natal"> KwaZulu-Natal </option>
+                <option value="Limpopo"> Limpopo </option>
+                <option value="Mpumalanga"> Mpumalanga </option>
+                <option value="Northern Cape"> Northern Cape </option>
+                <option value="North West"> North West </option>
+                <option value="Western Cape"> Western Cape </option>
+              </select> </div>
+            <div class="form-group"> <label for="shippingPostal"> Postal Code </label> <input type="text"
+                id="shippingPostal" name="shippingPostal" required maxlength="4" inputmode="numeric"> </div>
+          </div>
+        </fieldset> 
+        <!-- ================= BILLING ADDRESS ================= -->
+        <fieldset>
+          <legend>Billing Address</legend>
+          <div class="copy-row"> <input type="checkbox" id="copyPostalAddress" name="copyPostalAddress"> <label
+              for="copyPostalAddress"> Same as Shipping Address </label> </div>
+          <div class="form-grid">
+            <div class="form-group"> <label for="billingStreet"> Street Name </label> <input type="text"
+                id="billingStreet" name="billingStreet" required> </div>
+            <div class="form-group"> <label for="billingSuburb"> Suburb </label> <input type="text" id="billingSuburb"
+                name="billingSuburb" required> </div>
+            <div class="form-group"> <label for="billingCity"> City/Town </label> <input type="text" id="billingCity"
+                name="billingCity" required> </div>
+            <div class="form-group"> <label for="billingProvince"> Province </label> <select id="billingProvince"
+                name="billingProvince" required>
+                <option value=""> Select Province </option>
+                <option value="Eastern Cape"> Eastern Cape </option>
+                <option value="Free State"> Free State </option>
+                <option value="Gauteng"> Gauteng </option>
+                <option value="KwaZulu-Natal"> KwaZulu-Natal </option>
+                <option value="Limpopo"> Limpopo </option>
+                <option value="Mpumalanga"> Mpumalanga </option>
+                <option value="Northern Cape"> Northern Cape </option>
+                <option value="North West"> North West </option>
+                <option value="Western Cape"> Western Cape </option>
+              </select> </div>
+            <div class="form-group"> <label for="billingPostal"> Postal Code </label> <input type="text"
+                id="billingPostal" name="billingPostal" required maxlength="4" inputmode="numeric"> </div>
+          </div>
+        </fieldset>
+         <!-- ================= STREET VENDOR REFERRAL ================= -->
+        <fieldset>
+          <legend>Street Vendor Referral</legend>
+          <div class="form-group"> <label for="streetVendor"> Where did you hear about the street vendor? </label>
+            <select id="streetVendor" name="streetVendor" required>
+              <option value=""> Select an option </option>
+              <option value="wordOfMouth"> Word of Mouth </option>
+              <option value="internetSearch"> Internet Search </option>
+              <option value="advertising"> Advertising </option>
+              <option value="sawOnStreet"> Saw on Street </option>
+            </select> </div>
+        </fieldset> 
+        <!-- ================= CREDIT CARD INFORMATION ================= -->
+        <fieldset>
+          <legend>Credit Card Information</legend>
+          <div class="form-grid">
+            <div class="form-group"> <label for="cardName"> Name on Credit Card </label> <input type="text"
+                id="cardName" name="cardName" required> </div>
+            <div class="form-group"> <label for="cardType"> Credit Card Type </label> <select id="cardType"
+                name="cardType" required>
+                <option value=""> Select Card Type </option>
+                <option value="Visa"> Visa </option>
+                <option value="Mastercard"> Mastercard </option>
+                <option value="American Express"> American Express </option>
+              </select> </div>
+            <div class="form-group"> <label for="cardNumber"> Credit Card Number </label> <input type="text"
+                id="cardNumber" name="cardNumber" required maxlength="19" inputmode="numeric"
+                placeholder="1234 5678 9012 3456"> </div>
+            <div class="form-group"> <label for="expirationMonth"> Expiration Month </label> <select
+                id="expirationMonth" name="expirationMonth" required>
+                <option value=""> Select Month </option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select> </div>
+            <div class="form-group"> <label for="expirationYear"> Expiration Year </label> <select id="expirationYear"
+                name="expirationYear" required>
+                <option value=""> Select Year </option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select> </div>
+            <div class="form-group"> <label for="cvc"> CVC Number </label> <input type="text" id="cvc" name="cvc"
+                required maxlength="4" inputmode="numeric"> </div>
+          </div>
+        </fieldset>
+         <!-- ================= PASSWORD ================= -->
+        <fieldset>
+          <legend>Password</legend>
+          <div class="form-grid">
+            <div class="form-group"> <label for="accountPassword"> Password </label> <input type="password"
+                id="accountPassword" name="accountPassword" required> </div>
+            <div class="form-group"> <label for="confirmAccountPassword"> Password Confirmation </label> <input
+                type="password" id="confirmAccountPassword" name="confirmAccountPassword" required> </div>
+          </div>
+        </fieldset> 
+        <!-- ================= ACCOUNT CREDENTIALS ================= -->
+        <fieldset>
+          <legend>Account Credentials</legend>
+          <div class="form-grid">
+            <div class="form-group"> <label for="username"> User Name </label> <input type="text" id="username"
+                name="username" required> </div>
+          </div>
+        </fieldset> <!-- ================= SUBMIT ================= -->
+        <div class="form-group"> <button type="submit" id="subButton"> Submit Registration </button> </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

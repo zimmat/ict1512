@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Client Registration Form</title>
+  <link rel="stylesheet" href="css/registrationform.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/copyShippingToBilling.js" defer></script>
+  <script src="js/formValidation.js" defer></script>
+  <script src="js/orderConfirmation.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header-nav">
+      <div class="header-nav-logo">
+        <a href="/">
+          <img src="assets/images/logo.png" alt="Logo" class="header-logo">
+        </a>
+      </div>
+      <ul class="menu-items">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="products.html">Products</a></li>
+        <li class="menu-item"><a href="registration.html">Registration</a></li>
+        <li class="menu-item"><a href="staff.html">Staff</a></li>
+      </ul>
+    </section>
+  </header>
+  <div class="container">
+    <h1>Client Registration Form</h1>
+    <form id="registrationForm" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="preferredName">Preferred Name</label>
+            <input type="text" id="preferredName" name="preferredName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="fullNames">Client Full Names as on ID</label>
+            <input type="text" id="fullNames" name="fullNames" required>
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" required>
+          </div>
+
+          <div class="form-group">
+            <label for="idNumber">ID Number</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cellPhone">Cell Phone Number</label>
+            <div class="phone-field">
+              <span class="phone-prefix">+27</span>
+              <input type="tel" id="cellPhone" name="cellPhone" class="phone-input" placeholder="812345678"
+                pattern="\d{9}" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Shipping Address</legend>
+        <label for="shippingStreet">Street Name</label>
+        <input type="text" id="shippingStreet" name="shippingStreet" required>
+
+        <label for="shippingSuburb">Suburb</label>
+        <input type="text" id="shippingSuburb" name="shippingSuburb" required>
+
+        <div class="row">
+          <div>
+            <label for="shippingCity">City/Town</label>
+            <input type="text" id="shippingCity" name="shippingCity" required>
+          </div>
+          <div>
+            <label for="shippingProvince">Province</label>
+            <input type="text" id="shippingProvince" name="shippingProvince" required>
+          </div>
+          <div>
+            <label for="shippingPostal">Postal Code</label>
+            <input type="text" id="shippingPostal" name="shippingPostal" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Billing Address</legend>
+        <div class="copy-row">
+          <input type="checkbox" id="copyAddress" name="copyAddress" onchange="toggleCopyAddress(this)">
+          <label for="copyAddress">Same as shipping address</label>
+        </div>
+
+        <label for="billingStreet">Street Name</label>
+        <input type="text" id="billingStreet" name="billingStreet" required>
+
+        <label for="billingSuburb">Suburb</label>
+        <input type="text" id="billingSuburb" name="billingSuburb" required>
+
+        <div class="row">
+          <div>
+            <label for="billingCity">City/Town</label>
+            <input type="text" id="billingCity" name="billingCity" required>
+          </div>
+          <div>
+            <label for="billingProvince">Province</label>
+            <input type="text" id="billingProvince" name="billingProvince" required>
+          </div>
+          <div>
+            <label for="billingPostal">Postal Code</label>
+            <input type="text" id="billingPostal" name="billingPostal" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Street Vendor Referral</legend>
+        <label for="vendorReferral">Where did the client hear about the street vendor?</label>
+        <select id="vendorReferral" name="vendorReferral" required>
+          <option value="">Select one</option>
+          <option value="word_of_mouth">Word of mouth</option>
+          <option value="internet_search">Internet search</option>
+          <option value="advertising">Advertising</option>
+          <option value="saw_on_street">Saw on street</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Credit Card Information</legend>
+        <label for="cardName">Name on credit card</label>
+        <input type="text" id="cardName" name="cardName" required>
+
+        <label for="cardType">Credit card type</label>
+        <select id="cardType" name="cardType" required>
+          <option value="">Select card type</option>
+          <option value="visa">Visa</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="amex">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+
+        <label for="cardNumber">Credit card number</label>
+        <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" pattern="\d{13,16}" required>
+
+        <div class="row">
+          <div>
+            <label for="expiryMonth">Expiration month</label>
+            <select id="expiryMonth" name="expiryMonth" required>
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <div>
+            <label for="expiryYear">Expiration year</label>
+            <select id="expiryYear" name="expiryYear" required>
+              <option value="">Year</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+          </div>
+          <div>
+            <label for="cvc">CVC number</label>
+            <input type="text" id="cvc" name="cvc" inputmode="numeric" pattern="\d{3,4}" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+         <div>
+        <legend>Password Verification</legend>
+        <label for="password1">Password</label>
+        <input type="password" id="password1" name="password1" required>
+         </div>
+        <div>
+        <label for="confirmPassword1">Password confirmation</label>
+        <input type="password" id="confirmPassword1" name="confirmPassword1" required>
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+        <legend>Additional Information</legend>
+        <label for="hearAboutUs">Where did you hear about us?</label>
+        <input type="text" id="hearAboutUs" name="hearAboutUs">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Credentials</legend>
+        <div class="row">
+          <div>
+            <label for="username">User name</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div>
+            <label for="accountPassword">Password</label>
+            <input type="password" id="accountPassword" name="accountPassword" required>
+          </div>
+          <div>
+            <label for="confirmAccountPassword">Password confirmation</label>
+            <input type="password" id="confirmAccountPassword" name="confirmAccountPassword" required>
+          </div>
+        </div>
+      </fieldset>
+        </div>
+      <button type="submit" id="subButton">Submit Registration</button>
+    </form>
+  </div>
+</body>
+
+</html>

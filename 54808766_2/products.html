@@ -1,225 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!--
+    <head>
+   <!--
 
       Author: Zimkhitha Matshangaza
       Date:  14 July 2026 
 
       Filename: index.html
    -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Slime's Braai & Mleqwa Delicious Food</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Slime's Braai & Mleqwa Delicious Food</title>
   <link rel="stylesheet" href="StyleSheet/styles.css">
-  <link rel="stylesheet" href="StyleSheet/registrationform.css">
-  <script src="js/products.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
+ <header class="header">
     <h1>Slime's Braai & Mleqwa Delicious Food</h1>
-    <nav class="header-nav">
-      <div class="header-nav-logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Slime's Braai & Mleqwa Delicious Food Logo" class="header-logo">
-        </a>
-      </div>
-      <ul class="menu-items">
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="registration.html">Registration</a></li>
-        <li class="menu-item"><a href="staff.html">Staff</a></li>
-        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <form id="productsForm">
-      <section class="products">
-        <article class="product">
-          <h2>Fried Fish & Chips</h2>
-          <img src="images/fried-fish.jpeg" alt="Fried Fish and Chips">
+        <nav class="header-nav">
+            <div class="header-nav-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Slime's Braai & Mleqwa Delicious Food Logo" class="header-logo">
+                </a>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="registration.html">Registration</a></li>
+                <li class="menu-item"><a href="staff.html">Staff</a></li>
+                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+  <section class="products">
+  <article class="product">
+  <h2>Fried Fish & Chips</h2>
+  <img src="images/fried-fish.jpeg" alt="Fried Fish and Chips">
 
-          <p>
-            Golden crispy fried fish served with freshly prepared chips.
-          </p>
+  <p>
+    Golden crispy fried fish served with hot, freshly prepared chips and a slice of lemon.
+    A favourite meal for seafood lovers, seasoned with our special blend of herbs and spices.
+  </p>
 
-          <p class="product-features">
-            Fresh hake • Crispy chips • Choice of sauce
-          </p>
-          <p><strong>Price: R60.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Fried Fish & Chips" data-price="60" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="5">
-            Extra Garlic Sauce (+R5)
-          </label>
-        </article>
+  <ul class="product-details">
+    <li>Freshly fried hake</li>
+    <li>Served with crispy chips</li>
+    <li>Choice of tomato sauce or chilli sauce</li>
+  </ul>
 
-        <article class="product">
-          <h2>Bunny Chow</h2>
-          <img src="images/bunny-chow.jpeg" alt="Bunny Chow">
+   <p><strong>Price: R60.00</strong></p>
 
-          <p>
-            Traditional South African curry served in a fresh bread loaf.
-          </p>
+    <label>
+      <input type="checkbox" name="product" value="fried-fish-chips">
+      Select Product
+    </label>
 
-          <p class="product-features">
-            Homemade curry • Fresh bread • Filling meal
-          </p>
-          <p><strong>Price: R30.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Bunny Chow" data-price="30" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="10">
-            Extra scoop of curry (+R10)
-          </label>
-        </article>
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+<article class="product">
+  <h2>Bunny Chow</h2>
+  <img src="images/bunny-chow.jpeg" alt="Bunny Chow">
 
-        <article class="product">
-          <h2>Samp & Beans</h2>
-          <img src="images/samp-beans.jpeg" alt="Samp and Beans">
-          <p>
-            Slow-cooked samp and beans with traditional African flavours.
-          </p>
+  <p>
+    A traditional South African favourite made with a hollow loaf of bread filled with rich,
+    flavourful curry. Perfect for a filling lunch or dinner.
+  </p>
 
-          <p class="product-features">
-            Traditional recipe • Slow cooked • Home style
-          </p>
-          <p><strong>Price: R70.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Samp & Beans" data-price="70" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="20">
-            Add Vegetables (+R20)
-          </label>
-        </article>
+  <ul class="product-details">
+    <li>Freshly baked bread</li>
+    <li>Spicy homemade curry</li>
+    <li>Generous portion for a satisfying meal</li>
+  </ul>
+   <p><strong>Price: R30.00</strong></p>
 
-        <article class="product">
-          <h2>Mleqwa Special</h2>
-          <img src="images/mleqwa.jpeg" alt="Mleqwa Special">
-          <p>
-            Tender free-range chicken served with pap or steamed rice.
-          </p>
+    <label>
+      <input type="checkbox" name="product" value="bunny-chow">
+      Select Product
+    </label>
 
-          <p class="product-features">
-            Free-range • Slow cooked • Pap or rice
-          </p>
-          <p><strong>Price: R70.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Mleqwa Special" data-price="70" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="30">
-            Add Salads (+R30)
-          </label>
-        </article>
-        <article class="product">
-          <h2>Mogodu</h2>
-          <img src="images/mogodu.jpeg" alt="Mogodu">
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+   <article class="product">
+  <h2>Samp & Beans</h2>
+  <img src="images/samp-beans.jpeg" alt="Samp and Beans">
 
-          <p>
-            Tender beef tripe cooked in a rich tomato and onion gravy.
-          </p>
+  <p>
+    Soft samp and sugar beans slow-cooked with onions, tomatoes and traditional spices.
+    A comforting home-style meal enjoyed across South Africa.
+  </p>
 
-          <p class="product-features">
-            Slow cooked • Rich gravy • Pap or bread
-          </p>
+  <ul class="product-details">
+    <li>Traditional African recipe</li>
+    <li>Slow-cooked for maximum flavour</li>
+    <li>Best served with braaied meat</li>
+  </ul>
+   <p><strong>Price: R70.00</strong></p>
 
-          <p><strong>Price: R100.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Mogodu" data-price="100" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="10">
-            Add more bread (+R10)
-          </label>
-        </article>
-        <article class="product">
-          <h2>Braai Meat Platter</h2>
-          <img src="images/braaied-meat.jpeg" alt="Braai Meat Platter">
+    <label>
+      <input type="checkbox" name="product" value="samp-beans">
+      Select Product
+    </label>
 
-          <p>
-            Braaied steak, wors and chicken served with traditional sides.
-          </p>
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+   <article class="product">
+  <h2>Mleqwa Special</h2>
+  <img src="images/mleqwa.jpeg" alt="Mleqwa Special">
 
-          <p class="product-features">
-            Steak • Wors • Chicken
-          </p>
-          <p><strong>Price: R250.00</strong></p>
-          <input type="checkbox" class="productCheck" data-name="Braai Meat Platter" data-price="250" hidden>
-          <div class="cart-controls">
-            <button type="button" class="minus-btn"> −</button>
-            <span class="qty">0</span>
-            <button type="button" class="plus-btn">+</button>
-          </div>
-          <label>
-            <input type="checkbox" class="extra" data-price="5">
-            Extra barbecue Sauce (+R5)
-          </label>
-        </article>
-        <button type="submit">
-          Place Order
-        </button>
-      </section>
-    </form>
-    <section class="product-info">
-      <h2>Product Information</h2>
-      <dl style="background:#fff8f0; padding:20px; border-left:6px solid #d35400; border-radius:10px; line-height:1.8;">
+  <p>
+    Traditional free-range hardbody chicken (Mleqwa), slow-cooked until tender and served
+    with pap or steamed rice for an authentic home-cooked experience.
+  </p>
 
-        <dt>Fried Fish & Chips</dt>
-        <dd>Fresh hake lightly seasoned and fried until golden, served with crispy chips.</dd>
+  <ul class="product-details">
+    <li>Free-range chicken</li>
+    <li>Slow-cooked traditional recipe</li>
+    <li>Served with pap or rice</li>
+  </ul>
+   <p><strong>Price: R70.00</strong></p>
 
-        <dt>Bunny Chow</dt>
-        <dd>A traditional curry-filled bread loaf packed with rich South African flavour.</dd>
+    <label>
+      <input type="checkbox" name="product" value="Samp & Beans">
+      Select Product
+    </label>
 
-        <dt>Samp & Beans</dt>
-        <dd>Slow-cooked samp and sugar beans prepared using a traditional African recipe.</dd>
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+   <article class="product">
+  <h2>Mogodu</h2>
+  <img src="images/mogodu.jpeg" alt="Mogodu">
 
-        <dt>Mleqwa Special</dt>
-        <dd>Free-range hardbody chicken cooked slowly for a rich, authentic taste.</dd>
+  <p>
+    Tender beef tripe cooked slowly in a rich tomato and onion gravy with authentic African
+    spices. A hearty meal enjoyed with pap or steamed bread.
+  </p>
 
-        <dt>Mogodu</dt>
-        <dd>Tender beef tripe simmered in a flavourful tomato and onion gravy.</dd>
+  <ul class="product-details">
+    <li>Slow-cooked for tenderness</li>
+    <li>Traditional homemade flavour</li>
+    <li>Served with pap or steamed bread</li>
+  </ul>
 
-        <dt>Braai Meat Platter</dt>
-        <dd>A generous selection of braaied meats served with traditional sides.</dd>
+   <p><strong>Price: R100.00</strong></p>
 
-      </dl>
-    </section>
-    <section class="external-link">
-      <p>Find more information about South African braai culture on the official website of South African Tourism:
-        <a class="external-link" href="https://www.southafrica.net/" target="_blank" rel="noreferrer">South African
-          Tourism</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    <p>
-      <a href="tel:+27123456789">&#9742; +27 76 923 0378</a> |
-      <a href="mailto:info@slimesbraai.co.za">&#9993; info@slimesbraai.co.za</a>
+    <label>
+      <input type="checkbox" name="product" value="mogodu">
+      Select Product
+    </label>
+
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+  <article class="product">
+  <h2>Braai Meat Platter</h2>
+  <img src="images/braaied-meat.jpeg" alt="Braai Meat Platter">
+
+  <p>
+    A delicious combination of braaied steak, wors and chicken served with pap,
+    chakalaka and fresh salad. Perfect for sharing with family and friends.
+  </p>
+
+  <ul class="product-details">
+    <li>Steak, wors and chicken</li>
+    <li>Served with pap and chakalaka</li>
+    <li>Ideal for sharing</li>
+  </ul>
+   <p><strong>Price: R250.00</strong></p>
+
+    <label>
+      <input type="checkbox" name="product" value="Samp & Beans">
+      Select Product
+    </label>
+
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="0" value="0">
+    </label>
+</article>
+  </section>
+  <section class="product-info">
+    <h2>Product Information</h2>
+    <dl style="background:#fff8f0; padding:20px; border-left:6px solid #d35400; border-radius:10px; line-height:1.8;">
+
+    <dt>Fried Fish & Chips</dt>
+    <dd>Fresh hake lightly seasoned and fried until golden, served with crispy chips.</dd>
+
+    <dt>Bunny Chow</dt>
+    <dd>A traditional curry-filled bread loaf packed with rich South African flavour.</dd>
+
+    <dt>Samp & Beans</dt>
+    <dd>Slow-cooked samp and sugar beans prepared using a traditional African recipe.</dd>
+
+    <dt>Mleqwa Special</dt>
+    <dd>Free-range hardbody chicken cooked slowly for a rich, authentic taste.</dd>
+
+    <dt>Mogodu</dt>
+    <dd>Tender beef tripe simmered in a flavourful tomato and onion gravy.</dd>
+
+    <dt>Braai Meat Platter</dt>
+    <dd>A generous selection of braaied meats served with traditional sides.</dd>
+
+</dl>
+  </section>
+  <section class="external-link">
+    <p>Find more information about South African braai culture on the official website of South African Tourism:
+      <a class="external-link" href="https://www.southafrica.net/" target="_blank" rel="noreferrer">South African Tourism</a>
     </p>
-    <p>&copy; 2026 Slime's Braai & Mleqwa Delicious Food</p>
-  </footer>
+  </section>
+</main>
+<footer>
+  <p>
+    <a href="tel:+27123456789">&#9742; +27 76 923 0378</a> |
+    <a href="mailto:info@slimesbraai.co.za">&#9993; info@slimesbraai.co.za</a>
+  </p>
+  <p>&copy; 2026 Slime's Braai & Mleqwa Delicious Food</p>
+</footer>
 </body>
-
 </html>
