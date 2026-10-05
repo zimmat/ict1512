@@ -59,16 +59,27 @@ let subtotal = 0;
 tableBody.innerHTML = "";
 
 // Loop through selected products
-for (let i = 1; ; i++) { const product = params.get(`product${i}`);
+for (let i = 1; ; i++) { 
+    const product = params.get(`product${i}`);
+    console.log(`Product ${i}:`, product); // Log each product for debugging
  // Stop when there are no more products 
- if (!product) { break; }
+ if (!product) {
+     break; 
+    }
   const price = Number(params.get(`price${i}`)) || 0; 
   const quantity = Number(params.get(`qty${i}`)) || 0; 
   const extraCost = Number(params.get(`extra${i}`)) || 0;
+
    // Calculate total for this product 
-   const productTotal = (price + extraCost) * quantity; 
+   const productTotal = (price  * quantity) + extraCost; 
    subtotal += productTotal; 
-   tableBody.innerHTML += ` <tr> <td>${product}</td> <td>R${price.toFixed(2)}</td> <td>${quantity}</td> <td>R${extraCost.toFixed(2)}</td> <td>R${productTotal.toFixed(2)}</td> </tr> `; }
+   tableBody.innerHTML += ` <tr>
+    <td>${product}</td> 
+    <td>R${price.toFixed(2)}</td>
+     <td>${quantity}</td>
+      <td>R${extraCost.toFixed(2)}</td> 
+      <td>R${productTotal.toFixed(2)}</td>
+       </tr> `; }
 
 // Calculate VAT and grand total
 const vat = subtotal * 0.15;

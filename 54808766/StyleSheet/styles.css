@@ -1150,3 +1150,19 @@ button:hover {
     padding: 10px;
     border-radius: 20px;
 }
+
+.bottom-btns{
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+}
+.receipt-details{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+.receipt-details p{
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 6px;
+}
